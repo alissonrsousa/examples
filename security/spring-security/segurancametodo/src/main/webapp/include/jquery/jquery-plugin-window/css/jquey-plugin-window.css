@@ -1,0 +1,51 @@
+/*
+ * jQuery UI Window 1.8.16
+ * w/ Minimize & Maximize
+ * by Elijah Horton (fieryprophet@yahoo.com)
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Window#theming
+ */
+.ui-window { position: absolute; padding: .2em; width: 300px; overflow: hidden;}
+.ui-window .ui-window-titlebar { padding: .4em 1em; position: relative;}
+.ui-window .ui-window-title { float: left; margin: .1em 16px .1em 0; }
+.ui-window .ui-window-titlebar-minimize {float:right; width: 19px; padding: 1px; height: 18px; }
+.ui-window .ui-window-titlebar-minimize span { display: block; margin: 1px;}
+.ui-window .ui-window-titlebar-maximize {float:right; width: 19px; padding: 1px; height: 18px; }
+.ui-window .ui-window-titlebar-maximize span { display: block; margin: 1px;}
+.ui-window .ui-window-titlebar-close {float:right; width: 19px; padding: 1px; height: 18px; }
+.ui-window .ui-window-titlebar-close span { display: block; margin: 1px;}
+.ui-window .ui-window-content { position: relative; border: 0; padding: .5em 1em 1em .15em; background: none; overflow: auto; zoom: 1; }
+.ui-window .ui-window-buttonpane { text-align: left; border-width: 1px 0 0 0; background-image: none; margin: .5em 0 0 0; padding: .3em 1em .5em .4em; }
+.ui-window .ui-window-buttonpane .ui-window-buttonset { float: right; }
+.ui-window .ui-window-buttonpane button { margin: .5em .4em .5em 0; cursor: pointer; }
+.ui-window .ui-resizable-se { width: 14px; height: 14px; right: 3px; bottom: 3px; }
+.ui-draggable .ui-window-titlebar { cursor: move; }
+
+
+/* states and images */
+.ui-icon {width: 16px;height: 16px;}
+.ui-icon,
+.ui-widget-content .ui-icon {background-image: url(images/ui-icons_cccccc_256x240.png);}
+.ui-widget-header .ui-icon {background-image: url(images/ui-icons_ffffff_256x240.png);}
+.ui-state-default .ui-icon {background-image: url(images/ui-icons_cccccc_256x240.png);}
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon {background-image: url(images/ui-icons_ffffff_256x240.png);}
+.ui-state-active .ui-icon {background-image: url(images/ui-icons_222222_256x240.png);}
+.ui-state-highlight .ui-icon {background-image: url(images/ui-icons_4b8e0b_256x240.png);}
+.ui-state-error .ui-icon,
+.ui-state-error-text .ui-icon {background-image: url(images/ui-icons_a83300_256x240.png);}
+
+/* positioning */
+.ui-icon-minusthick { background-position: -64px -128px; }
+.ui-icon-plusthick { background-position: -32px -128px; }
+.ui-icon-closethick { background-position: -96px -128px; }
+.ui-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+.ui-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+/* overlay */
+.ui-widget-overlay {background: #5c5c5c url(images/ui-bg_flat_50_5c5c5c_40x100.png) 50% 50% repeat-x;opacity: .8;filter: Alpha(Opacity=80);}
+.ui-widget-shadow {margin: -7px 0 0 -7px;padding: 7px;background: #cccccc url(images/ui-bg_flat_30_cccccc_40x100.png) 50% 50% repeat-x;opacity: .6;filter: Alpha(Opacity=60);border-radius: 8px;}

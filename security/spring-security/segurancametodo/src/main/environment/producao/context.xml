@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context reloadable="true" crossContext="true">
+	<Resource 
+		auth="Container" 
+		name="jdbc/dbmubdv"
+		type="javax.sql.DataSource"
+		driverClassName="oracle.jdbc.driver.OracleDriver"
+		url="jdbc:oracle:thin:@(DESCRIPTION = (LOAD_BALANCE=yes)(ADDRESS=(PROTOCOL=TCP)(HOST=mubpx01-scan)(PORT=1549))(CONNECT_DATA=(SERVER=dedicated)(SERVICE_NAME=mub)))"
+		username="APLMUBWEB"
+		password="UXmW50sx_eUUvnT"
+		minActive="1" 
+		maxActive="50"
+		minIdle="1" 
+		maxIdle="5" 
+		maxWait="30000"
+		removeAbandoned="true" 
+		removeAbandonedTimeout="300" 
+		logAbandoned="false"
+		initialSize="2" 
+		validationQuery="select 1 from dual" 
+		testOnBorrow="true"
+		testWhileIdle="true" 
+		timeBetweenEvictionRunsMillis="10000"
+		minEvictableIdleTimeMillis="60000"
+		factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory"/>
+</Context>

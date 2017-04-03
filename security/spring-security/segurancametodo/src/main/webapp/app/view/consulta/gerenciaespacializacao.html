@@ -1,0 +1,49 @@
+<div id="loading_screen" ng-show="ctrl_consulta.isLoading"><img src="resources/images/loader.gif" alt="Carregando..."><h5>Por favor aguarde...</h5></div>
+
+<div style="max-width:743px; text-align: center;">
+
+	<div class="window-body2 panel-body" >
+    
+	    <div class="panel panel-default">
+	      <div class="panel-heading">Gerência de Espacialização / Filtros</div>
+	      <div class="panel-body">
+	        <dl class="dl-horizontal">
+	            <dt>UF:</dt><dd class="ng-binding" style="text-align: left">{{ctrl_consulta.filtroGerenciaEspacializacao.estado.nome}}</dd>
+	            <dt ng-show="ctrl_consulta.filtroGerenciaEspacializacao.descricaoSituacaoUsuario && ctrl_consulta.filtroGerenciaEspacializacao.descricaoSituacaoUsuario != ''">Usuários:</dt><dd class="ng-binding" style="text-align: left">{{ctrl_consulta.filtroGerenciaEspacializacao.descricaoSituacaoUsuario}}</dd>
+	            <dt ng-show="ctrl_consulta.filtroGerenciaEspacializacao.usuario.nome && ctrl_consulta.filtroGerenciaEspacializacao.usuario.nome != ''">Nome:</dt><dd class="ng-binding" style="text-align: left">{{ctrl_consulta.filtroGerenciaEspacializacao.usuario.nome}}</dd>
+	            <dt ng-show="(ctrl_consulta.filtroGerenciaEspacializacao.dataInicioFormatada && ctrl_consulta.filtroGerenciaEspacializacao.dataInicioFormatada != '') || (ctrl_consulta.filtroGerenciaEspacializacao.dataFimFormatada && ctrl_consulta.filtroGerenciaEspacializacao.dataFimFormatada != '')">Período:</dt><dd class="ng-binding" style="text-align: left">{{ctrl_consulta.filtroGerenciaEspacializacao.dataInicioFormatada}}<span ng-show="ctrl_consulta.filtroGerenciaEspacializacao.dataFimFormatada && ctrl_consulta.filtroGerenciaEspacializacao.dataFimFormatada != ''"> até </span>{{ctrl_consulta.filtroGerenciaEspacializacao.dataFimFormatada}}</dd>
+	        </dl>
+	      </div>
+	    </div>
+	        
+		<table class="table table-bordered table-striped table-hover">
+			<tr id="order_consultaBasica">
+				<th style="width: 10px; background-color: darkgrey;"><input type="checkbox" ng-model="ctrl_consulta.checkAllGerenciaEspacializacao" ng-click="ctrl_consulta.checkAllAtributos()" /></th>
+				<th style="width: 190px; background-color: darkgrey; text-align: center;">Gerência de Espacialização</th>
+				<th style="background-color: darkgrey; text-align: center;">Logradouro</th>
+				<th style="background-color: darkgrey; text-align: center;">Estação</th>
+				<th style="background-color: darkgrey; text-align: center;">Caixa Terminal</th>
+				<th style="background-color: darkgrey; text-align: center;">Seção Serviço</th>
+			</tr>
+		    <tr ng-repeat="item in ctrl_consulta.listAtributosGerenciaEspacializacao">
+		    	<td style="width: 10px;"><input type="checkbox" ng-model="item.checked" ng-change="ctrl_consulta.checkAtributo(item, item.checked)" ng-click="ctrl_consulta.checkAllGerenciaEspacializacao = false" /></td>
+		    	<td style="text-align: left; width: 150px;">{{item.descricao}}</td>
+		    	<td style="text-align: center; width: 130px;">{{item.logradouro}}</td>
+		    	<td style="text-align: center; width: 130px;">{{item.estacao}}</td>
+		    	<td style="text-align: center; width: 130px;">{{item.caixaTerminal}}</td>
+		    	<td style="text-align: center; width: 130px;">{{item.secaoServico}}</td>
+		    </tr>	    	    		
+		</table>
+		
+	</div>
+	
+    <div>
+        <button type="button" class="btn btn-default btn-sm" ng-click="ctrl_consulta.consultar();">Consultar</button>&nbsp;
+        <button type="button" class="btn btn-default btn-sm" ng-click="ctrl_consulta.limpar()">Limpar</button>&nbsp;
+        <button id="btnExportarExcel" type="button" class="btn btn-default btn-sm" ng-disabled="!ctrl_consulta.habilitarBtnExportarGerenciaEspacializacao"
+            ng-click="ctrl_consulta.exportar('excel');" ><i class="icone-excel"></i> Exportar Excel </button>
+        <button id="btnExportarPDF" type="button" class="btn btn-default btn-sm" ng-disabled="!ctrl_consulta.habilitarBtnExportarGerenciaEspacializacao"
+            ng-click="ctrl_consulta.exportar('pdf');" ><i class="icone-pdf"></i> Exportar PDF </button>				
+    </div>	
+
+</div>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bean:beans 
+	xmlns:bean="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://www.springframework.org/schema/security" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans-3.2.xsd 
+						http://www.springframework.org/schema/security 
+						http://www.springframework.org/schema/security/spring-security-3.2.xsd"> 
+	
+    <global-method-security secured-annotations="enabled" />
+ 
+	<http auto-config="true">
+	    
+        <!-- Não há restrições para login.jsp -->
+        <intercept-url pattern="/security/**" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+ 
+        <!-- Restringe acesso a todas as otras páginas -->
+        <intercept-url pattern="/**" access="ROLE_USER" />
+ 
+        <!-- Seta a página de login e o que fazer se o login falhar -->
+        <form-login login-page="/security/login.jsp" 
+            		login-processing-url="/perform_login"
+            		authentication-failure-url="/security/login.jsp?login_error=1"
+            		default-target-url="/index.jsp"
+            		username-parameter="username"
+					password-parameter="password" />
+        
+       	<logout logout-success-url="/security/login.jsp" logout-url="/logout"/>
+
+	</http>
+ 
+    <authentication-manager>
+	    <!--
+	    Usernames/Passwords are
+	        alisson/emu
+	        cassio/wombat
+	        rodrigo/opal
+	    -->
+	    <authentication-provider>
+	        <password-encoder hash="md5"/>
+	        <user-service>
+	            <user name="alisson" password="65d15fe9156f9c4bbffd98085992a44e" authorities="ROLE_USER,ROLE_ADMIN" />
+	            <user name="cassio" password="2b58af6dddbd072ed27ffc86725d7d3a" authorities="ROLE_USER" />
+	            <user name="rodrigo" password="22b5c9accc6e1ba628cedc63a72d57f8" authorities="ROLE_USER" />
+	        </user-service>
+	    </authentication-provider>
+	</authentication-manager>
+	
+</bean:beans>
+
