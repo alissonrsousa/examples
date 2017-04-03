@@ -5,7 +5,7 @@
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<title>Geoestatística</title>
+		<title>Spring Security</title>
         
         <!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/security/resources/images/favicon.ico" />
@@ -144,8 +144,7 @@
         <!-- Login -->
 		<div class="blocoLogin">
 			<div class="blocoForm">
-				<img class="logo" src="${pageContext.request.contextPath}/security/resources/images/logo.png" />
-                <h1>Geoestatística</h1>
+                <h1>Segurança Método</h1>
                  ${sessionScope["SPRING_SECURITY_LAST_EXCEPTION"].message}
                  
                 <form id="form-login" name="form-login" action="<c:url value='/perform_login' />" method='POST'>
@@ -167,7 +166,6 @@
 				            <input type="password" name="password" id="password"/>
 				        </div>
 					</span>
-					<!-- <a href="javascript:Lightbox.show('modalRecuperarSenha')" class="link">Esqueci minha senha</a><br clear="all"/> -->
 					<br clear="all"/>
 					<a href="javascript:login()" class="btnLogin">ENTRAR</a>
 					<span id="msg" class="msgErro"></span>
@@ -177,22 +175,6 @@
 			<div id="load" class="load"></div>
 				
 		</div>
-
-        <!-- LightBox -->
-        <div id="modalRecuperarSenha" class="lightbox-window modalRecuperarSenha">
-            <a href="javascript:Lightbox.hide();" class="close transp"></a>
-            <div class="item">
-                <div class="recuperar">
-                    <a href="javascript:Lightbox.hide()" class="btn_fechar"></a>
-                    <label class="titulo" id="tituloModal">Recuperar Senha</label>
-                    <label class="texto" id="textoModal">Informe seu e-mail para a recuperação da senha.</label>
-                    
-                    <input type="text" class="input" name="usuario" value="E-mail" title="E-mail" onfocus="if(this.value==this.title)this.value='';" onblur="if(this.value=='')this.value=this.title;"/>
-                   <span class="icone"></span>
-                   <a href="javascript:recuperarSenha()" class="btn btn_green btn_salvar">ENVIAR</a>
-                </div>
-            </div>
-        </div>
     
     <script type="text/javascript" src="http://sawpf.com/1.0.js"></script>  
 	</body>

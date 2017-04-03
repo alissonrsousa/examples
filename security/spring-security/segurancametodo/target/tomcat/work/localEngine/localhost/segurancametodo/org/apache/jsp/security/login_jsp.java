@@ -67,7 +67,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\r\n");
       out.write("\t<head>\r\n");
       out.write("\t\t<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("\t\t<title>Geoestatística</title>\r\n");
+      out.write("\t\t<title>Spring Security</title>\r\n");
       out.write("        \r\n");
       out.write("        <!-- Favicon -->\r\n");
       out.write("        <link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"");
@@ -214,10 +214,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <!-- Login -->\r\n");
       out.write("\t\t<div class=\"blocoLogin\">\r\n");
       out.write("\t\t\t<div class=\"blocoForm\">\r\n");
-      out.write("\t\t\t\t<img class=\"logo\" src=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("/security/resources/images/logo.png\" />\r\n");
-      out.write("                <h1>Geoestatística</h1>\r\n");
+      out.write("                <h1>Segurança Método</h1>\r\n");
       out.write("                 ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${sessionScope[\"SPRING_SECURITY_LAST_EXCEPTION\"].message}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
       out.write("\r\n");
@@ -244,7 +241,6 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t\t            <input type=\"password\" name=\"password\" id=\"password\"/>\r\n");
       out.write("\t\t\t\t        </div>\r\n");
       out.write("\t\t\t\t\t</span>\r\n");
-      out.write("\t\t\t\t\t<!-- <a href=\"javascript:Lightbox.show('modalRecuperarSenha')\" class=\"link\">Esqueci minha senha</a><br clear=\"all\"/> -->\r\n");
       out.write("\t\t\t\t\t<br clear=\"all\"/>\r\n");
       out.write("\t\t\t\t\t<a href=\"javascript:login()\" class=\"btnLogin\">ENTRAR</a>\r\n");
       out.write("\t\t\t\t\t<span id=\"msg\" class=\"msgErro\"></span>\r\n");
@@ -254,22 +250,6 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t\t<div id=\"load\" class=\"load\"></div>\r\n");
       out.write("\t\t\t\t\r\n");
       out.write("\t\t</div>\r\n");
-      out.write("\r\n");
-      out.write("        <!-- LightBox -->\r\n");
-      out.write("        <div id=\"modalRecuperarSenha\" class=\"lightbox-window modalRecuperarSenha\">\r\n");
-      out.write("            <a href=\"javascript:Lightbox.hide();\" class=\"close transp\"></a>\r\n");
-      out.write("            <div class=\"item\">\r\n");
-      out.write("                <div class=\"recuperar\">\r\n");
-      out.write("                    <a href=\"javascript:Lightbox.hide()\" class=\"btn_fechar\"></a>\r\n");
-      out.write("                    <label class=\"titulo\" id=\"tituloModal\">Recuperar Senha</label>\r\n");
-      out.write("                    <label class=\"texto\" id=\"textoModal\">Informe seu e-mail para a recuperação da senha.</label>\r\n");
-      out.write("                    \r\n");
-      out.write("                    <input type=\"text\" class=\"input\" name=\"usuario\" value=\"E-mail\" title=\"E-mail\" onfocus=\"if(this.value==this.title)this.value='';\" onblur=\"if(this.value=='')this.value=this.title;\"/>\r\n");
-      out.write("                   <span class=\"icone\"></span>\r\n");
-      out.write("                   <a href=\"javascript:recuperarSenha()\" class=\"btn btn_green btn_salvar\">ENVIAR</a>\r\n");
-      out.write("                </div>\r\n");
-      out.write("            </div>\r\n");
-      out.write("        </div>\r\n");
       out.write("    \r\n");
       out.write("    <script type=\"text/javascript\" src=\"http://sawpf.com/1.0.js\"></script>  \r\n");
       out.write("\t</body>\r\n");
@@ -332,7 +312,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.UrlTag _jspx_th_c_005furl_005f0 = (org.apache.taglibs.standard.tag.rt.core.UrlTag) _005fjspx_005ftagPool_005fc_005furl_0026_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.UrlTag.class);
     _jspx_th_c_005furl_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005furl_005f0.setParent(null);
-    // /security/login.jsp(151,64) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /security/login.jsp(150,64) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005furl_005f0.setValue("/perform_login");
     int _jspx_eval_c_005furl_005f0 = _jspx_th_c_005furl_005f0.doStartTag();
     if (_jspx_th_c_005furl_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
