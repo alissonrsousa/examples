@@ -7,9 +7,6 @@
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<title>Spring Security</title>
         
-        <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/security/resources/images/favicon.ico" />
-		
 		<jwr:script src="/bundles/security.js"/>
 		<jwr:style src="/bundles/security.css" />
 		
@@ -135,12 +132,7 @@
 		</script>
 	</head>
     
-	<body id="body" onload="onload();">
-		<div class="sombra s1"></div>
-		<div class="sombra s2"></div>
-		<div class="sombra s3"></div>
-		<div class="sombra s4"></div>
-		
+	<body id="body" style="background-color: white;" onload="onload();">
         <!-- Login -->
 		<div class="blocoLogin">
 			<div class="blocoForm">

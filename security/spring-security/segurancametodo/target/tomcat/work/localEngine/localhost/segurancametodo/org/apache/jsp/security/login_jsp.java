@@ -69,11 +69,6 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\r\n");
       out.write("\t\t<title>Spring Security</title>\r\n");
       out.write("        \r\n");
-      out.write("        <!-- Favicon -->\r\n");
-      out.write("        <link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("/security/resources/images/favicon.ico\" />\r\n");
-      out.write("\t\t\r\n");
       out.write("\t\t");
       if (_jspx_meth_jwr_005fscript_005f0(_jspx_page_context))
         return;
@@ -205,12 +200,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t\t</script>\r\n");
       out.write("\t</head>\r\n");
       out.write("    \r\n");
-      out.write("\t<body id=\"body\" onload=\"onload();\">\r\n");
-      out.write("\t\t<div class=\"sombra s1\"></div>\r\n");
-      out.write("\t\t<div class=\"sombra s2\"></div>\r\n");
-      out.write("\t\t<div class=\"sombra s3\"></div>\r\n");
-      out.write("\t\t<div class=\"sombra s4\"></div>\r\n");
-      out.write("\t\t\r\n");
+      out.write("\t<body id=\"body\" style=\"background-color: white;\" onload=\"onload();\">\r\n");
       out.write("        <!-- Login -->\r\n");
       out.write("\t\t<div class=\"blocoLogin\">\r\n");
       out.write("\t\t\t<div class=\"blocoForm\">\r\n");
@@ -274,7 +264,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
     net.jawr.web.taglib.JavascriptBundleTag _jspx_th_jwr_005fscript_005f0 = (net.jawr.web.taglib.JavascriptBundleTag) _005fjspx_005ftagPool_005fjwr_005fscript_0026_005fsrc_005fnobody.get(net.jawr.web.taglib.JavascriptBundleTag.class);
     _jspx_th_jwr_005fscript_005f0.setPageContext(_jspx_page_context);
     _jspx_th_jwr_005fscript_005f0.setParent(null);
-    // /security/login.jsp(13,2) name = src type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /security/login.jsp(10,2) name = src type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_jwr_005fscript_005f0.setSrc("/bundles/security.js");
     int _jspx_eval_jwr_005fscript_005f0 = _jspx_th_jwr_005fscript_005f0.doStartTag();
     if (_jspx_th_jwr_005fscript_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -293,7 +283,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
     net.jawr.web.taglib.CSSBundleTag _jspx_th_jwr_005fstyle_005f0 = (net.jawr.web.taglib.CSSBundleTag) _005fjspx_005ftagPool_005fjwr_005fstyle_0026_005fsrc_005fnobody.get(net.jawr.web.taglib.CSSBundleTag.class);
     _jspx_th_jwr_005fstyle_005f0.setPageContext(_jspx_page_context);
     _jspx_th_jwr_005fstyle_005f0.setParent(null);
-    // /security/login.jsp(14,2) name = src type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /security/login.jsp(11,2) name = src type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_jwr_005fstyle_005f0.setSrc("/bundles/security.css");
     int _jspx_eval_jwr_005fstyle_005f0 = _jspx_th_jwr_005fstyle_005f0.doStartTag();
     if (_jspx_th_jwr_005fstyle_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -312,7 +302,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.UrlTag _jspx_th_c_005furl_005f0 = (org.apache.taglibs.standard.tag.rt.core.UrlTag) _005fjspx_005ftagPool_005fc_005furl_0026_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.UrlTag.class);
     _jspx_th_c_005furl_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005furl_005f0.setParent(null);
-    // /security/login.jsp(150,64) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /security/login.jsp(142,64) name = value type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005furl_005f0.setValue("/perform_login");
     int _jspx_eval_c_005furl_005f0 = _jspx_th_c_005furl_005f0.doStartTag();
     if (_jspx_th_c_005furl_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {

@@ -58,12 +58,9 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\t<meta http-equiv=\"Content-Type\" content=\"text/html; UTF-8\">\r\n");
       out.write("\t<title>Spring Security</title>\r\n");
       out.write("\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n");
-      out.write("    <link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null, false));
-      out.write("/security/resources/images/favicon.ico\" />\r\n");
       out.write("\t\r\n");
       out.write("</head>\r\n");
-      out.write("<body ng-app=\"aplicacao\" id=\"ng-app\" ng-controller=\"init\">\r\n");
+      out.write("<body>\r\n");
       out.write("\t\r\n");
       out.write("\t<div id=\"corpo\">\r\n");
       out.write("\t\tBem Vindo à aplicação. <a href=\"/segurancametodo/logout\">Sair</a>\r\n");
