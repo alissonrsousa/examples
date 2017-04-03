@@ -2,20 +2,14 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>digicade.geosite</groupId>
-	<artifactId>geoestatistica</artifactId>
+	<groupId>alissonrsousa.examples</groupId>
+	<artifactId>segurancametodo</artifactId>
 	<version>1.0.0</version>
 	<packaging>war</packaging>
 
-	<name>geoestatistica</name>
+	<name>segurancametodo</name>
 
 	<url>http://maven.apache.org</url>
-
-	<parent>
-		<groupId>br.com.digicade</groupId>
-		<artifactId>digicade-base</artifactId>
-		<version>1.0.0</version>
-	</parent>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,11 +17,6 @@
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>br.com.digicade</groupId>
-			<artifactId>digicade-commons</artifactId>
-			<version>1.7-SNAPSHOT</version>
-		</dependency>
 
 		<dependency>
 			<groupId>log4j</groupId>
@@ -222,7 +211,7 @@
 	</profiles>
 
 	<build>
-		<finalName>geoestatistica</finalName>
+		<finalName>segurancametodo</finalName>
 
 		<filters>
 			<filter>${filter.properties.file}</filter>

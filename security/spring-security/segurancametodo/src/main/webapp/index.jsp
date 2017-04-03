@@ -12,7 +12,7 @@
 <body ng-app="aplicacao" id="ng-app" ng-controller="init">
 	
 	<div id="corpo">
-		Bem Vindo à aplicação. <a href="/geoestatistica/logout">Sair</a>
+		Bem Vindo à aplicação. <a href="/segurancametodo/logout">Sair</a>
 	</div>
 	
 </body>
