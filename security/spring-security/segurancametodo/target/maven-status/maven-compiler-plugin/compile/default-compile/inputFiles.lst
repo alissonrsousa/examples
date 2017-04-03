@@ -1,6 +1,3 @@
-D:\ambiente\git\examples\security\spring-security\segurancametodo\src\main\java\br\com\alissonrsousa\web\proxy\ProxyServlet.java
 D:\ambiente\git\examples\security\spring-security\segurancametodo\src\main\java\br\com\alissonrsousa\resource\TesteResource.java
-D:\ambiente\git\examples\security\spring-security\segurancametodo\src\main\java\br\com\alissonrsousa\web\filter\ServiceAPIFilter.java
 D:\ambiente\git\examples\security\spring-security\segurancametodo\src\main\java\br\com\alissonrsousa\resource\impl\TesteResourceImpl.java
-D:\ambiente\git\examples\security\spring-security\segurancametodo\src\main\java\br\com\alissonrsousa\web\filter\CustomHttpServletRequest.java
 D:\ambiente\git\examples\security\spring-security\segurancametodo\src\main\java\br\com\alissonrsousa\web\GuiceServletConfig.java
