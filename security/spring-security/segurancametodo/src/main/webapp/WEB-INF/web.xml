@@ -28,7 +28,7 @@
 
 	<!-- Início Jersey -->
 	<listener>
-		<listener-class>br.com.digicade.geosite.geoestatistica.web.GuiceServletConfig</listener-class>
+		<listener-class>br.com.alissonrsousa.web.GuiceServletConfig</listener-class>
 	</listener>
 	
 	<filter>

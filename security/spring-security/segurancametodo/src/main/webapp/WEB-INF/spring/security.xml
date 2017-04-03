@@ -35,15 +35,11 @@
 	    <!--
 	    Usernames/Passwords are
 	        alisson/emu
-	        cassio/wombat
-	        rodrigo/opal
 	    -->
 	    <authentication-provider>
 	        <password-encoder hash="md5"/>
 	        <user-service>
 	            <user name="alisson" password="65d15fe9156f9c4bbffd98085992a44e" authorities="ROLE_USER,ROLE_ADMIN" />
-	            <user name="cassio" password="2b58af6dddbd072ed27ffc86725d7d3a" authorities="ROLE_USER" />
-	            <user name="rodrigo" password="22b5c9accc6e1ba628cedc63a72d57f8" authorities="ROLE_USER" />
 	        </user-service>
 	    </authentication-provider>
 	</authentication-manager>
