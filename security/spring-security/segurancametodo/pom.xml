@@ -180,42 +180,10 @@
             <name>Java.net repository</name>
             <url>http://download.java.net/maven/2</url>
         </repository>
-    </repositories>	
-
-	<profiles>
-		<profile>
-			<id>desenvolvimento</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<properties>
-				<environment.name>desenvolvimento</environment.name>
-				<filter.properties.file>src/main/environment/desenvolvimento/filter.properties</filter.properties.file>
-			</properties>
-		</profile>
-		<profile>
-			<id>homologacao</id>
-			<properties>
-				<environment.name>homologacao</environment.name>
-				<filter.properties.file>src/main/environment/homologacao/filter.properties</filter.properties.file>
-			</properties>
-		</profile>
-		<profile>
-			<id>producao</id>
-			<properties>
-				<environment.name>producao</environment.name>
-				<filter.properties.file>src/main/environment/producao/filter.properties</filter.properties.file>
-			</properties>
-		</profile>
-		
-	</profiles>
+    </repositories>
 
 	<build>
 		<finalName>segurancametodo</finalName>
-
-		<filters>
-			<filter>${filter.properties.file}</filter>
-		</filters>
 
 		<resources>
 			<resource>
